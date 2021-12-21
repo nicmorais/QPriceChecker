@@ -2,6 +2,8 @@
 # QPriceChecker
 A price checker made with Qt, which can run on a Raspberry Pi, PocketCHIP, Orange Pi and other SBCs.
 
+![Screenshot](https://raw.githubusercontent.com/nicmorais/QPriceChecker/main/screenshot.png)
+
 ### Setting up a server
 The server must respond at the endpoint "/product" with barcode as parameter (eg. " /product?barcode=9999") providing a JSON object containing the product's name and it's price:
 ```javascript
@@ -44,8 +46,9 @@ In this case, you need a text files containing all products and their prices (pr
 
 ### Building and Running
 **QMake:**
-
+```bash
 cd QPriceChecker
 qmake QPriceChecker.pro
 make
 ./QPriceChecker
+```
